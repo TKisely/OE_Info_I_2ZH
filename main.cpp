@@ -3,6 +3,9 @@
 #include <cstdlib>
 using namespace std; //CSAK CPP MIATT
 
+//
+//Hatha ilyen is kell
+//
 int tobbAdattalTerekVissza(int *elsoAdat, int *masodikAdat){
     //Parameter listan cim szerint tudsz atadni es azt
     //a main fgvben tudod hasznalni utana
