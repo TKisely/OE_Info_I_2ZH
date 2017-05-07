@@ -1,11 +1,15 @@
-#include <iostream>
+#include <iostream> //CSAK CPP MIATT
 #include <stdio.h>
 #include <cstdlib>
-using namespace std;
+using namespace std; //CSAK CPP MIATT
 
 int tobbAdattalTerekVissza(int *elsoAdat, int *masodikAdat){
 
 }
+
+//
+//ELSO
+//
 
 int hanyDarabEVagyNVanBenne(char* aminVizsgalom){
     int ret=0;
@@ -17,6 +21,10 @@ int hanyDarabEVagyNVanBenne(char* aminVizsgalom){
     return ret;
 }
 
+//
+//MASODIK
+//
+
 int tombLegnagyobbEleme(int* amitVizsgalok){
     int legnagyobb=*amitVizsgalok;
     //feltetelezzuk, hogy az elso a legnagyobb, ha nem, akkor majd csereljuk a ciklusban
@@ -27,7 +35,11 @@ int tombLegnagyobbEleme(int* amitVizsgalok){
 
 }
 
-int torlomNekedAMaganhangyokat(char* amibenTorlom){
+//
+//HARMADIK
+//
+
+int torlomNekedAMaganhangzokat(char* amibenTorlom){
     int ret=0;
     char* amibenAMegoldasLesz;
     for (;*amibenTorlom!='\0'; *amibenTorlom++) {
@@ -41,6 +53,10 @@ int torlomNekedAMaganhangyokat(char* amibenTorlom){
 
     return ret;
 }
+
+//
+//NEGYEDIK
+//
 
 int egyezoElemekA(int elsoTomb[], int masodikTomb[], int elsoMerete, int masodikMerete){
     int ret=0;
@@ -56,6 +72,11 @@ int egyezoElemekA(int elsoTomb[], int masodikTomb[], int elsoMerete, int masodik
     }
     return ret;
 }
+
+//
+//FOPROGRAM
+//
+
 
 int main() {
     char* karakterTomb="Az egyik ZH egy heten at mindenkinek sikerult";
@@ -77,22 +98,27 @@ int main() {
     printf("%d",a);
 
 
-    std::cout <<std::endl;
+    std::cout <<std::endl;//CPP resz
+
     //Masodik feladat meghivas
     int b=tombLegnagyobbEleme(szamTomb);
     printf("%d",b);
 
-    std::cout <<std::endl;
+    std::cout <<std::endl;//CPP resz
+
     //Harmadik feladat meghivasa
-    int c=torlomNekedAMaganhangyokat(harmadikFeladatKarakterTomb);
+    int c=torlomNekedAMaganhangzokat(harmadikFeladatKarakterTomb);
     printf("%d",c);
 
 
-    std::cout <<std::endl;
+    std::cout <<std::endl;//CPP resz
+
     //Negyedik feladat
     int d=egyezoElemekA(negyedikFeladatSzamTombElso,negyedikFeladatSzamTombMasodik,elsoMerete,masodikMerete);
     printf("%d",d);
 
+    //
+    //CPP resz
     std::cout <<std::endl <<"Hello, World!" << std::endl;
     return 0;
 }
