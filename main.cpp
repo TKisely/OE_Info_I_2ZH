@@ -4,7 +4,15 @@
 using namespace std; //CSAK CPP MIATT
 
 int tobbAdattalTerekVissza(int *elsoAdat, int *masodikAdat){
-
+    //Parameter listan cim szerint tudsz atadni es azt
+    //a main fgvben tudod hasznalni utana
+    //igy ugymond tobb visszateresi erteked van
+    int ret=0;
+    int elsoAdatnak=6;
+    int masodikAdatnak=8;
+    *elsoAdat=elsoAdatnak;
+    *masodikAdat=masodikAdatnak;
+    return elsoAdatnak+masodikAdatnak;
 }
 
 //
@@ -105,6 +113,15 @@ int main() {
     int elsoMerete=23;
     int masodikMerete=22;
 
+    //
+    //TobbAdat valtozoi
+    //
+    int elsoAdatom=2;
+    int masodikAdatom=4;
+    int amibeVisszater;
+
+    //
+    //
     //Elso feladat meghivas
     int a=hanyDarabEVagyNVanBenne(karakterTomb);
     printf("%d",a);
@@ -132,5 +149,12 @@ int main() {
     //
     //CPP resz
     std::cout <<std::endl <<"Hello, World!" << std::endl;
+
+    //
+    //Tobb adattal ter vissza meghivas
+    //
+    amibeVisszater=tobbAdattalTerekVissza(&elsoAdatom,&masodikAdatom);
+    printf("%d , %d , %d ",elsoAdatom,masodikAdatom,amibeVisszater);
+
     return 0;
 }
