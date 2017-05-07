@@ -79,17 +79,29 @@ int egyezoElemekA(int elsoTomb[], int masodikTomb[], int elsoMerete, int masodik
 
 
 int main() {
+
+    //
+    //Elso valtozoja
+    //
     char* karakterTomb="Az egyik ZH egy heten at mindenkinek sikerult";
 
-    char* harmadikFeladatKarakterTomb="A ZH az elmult heten rossz lett";
-
+    //
+    //Masodik valtozoja
+    //
     int szamTomb[]={-685,590,72,101,30,-200,-605,415,710,42,68,-1,13,366,12,-1222,670,591,-73};
 
+    //
+    //Harmadik valtozoja
+    //
+    char* harmadikFeladatKarakterTomb="A ZH az elmult heten rossz lett";
+
+    //
+    //Negyedik valtozoi
+    //
     int negyedikFeladatSzamTombElso[]={67,-685,590,670,72,101,30,-200,605,
                                        -122,415,710,42,68,-1,13,366,12,672,591,33,151,37};
     int negyedikFeladatSzamTombMasodik[]={-590,-122,672,12,42,392,33,-255,
                                           607,455,710,33,1,12,-135,67,72,670,13,366,867,-200};
-    int i;
     int elsoMerete=23;
     int masodikMerete=22;
 
